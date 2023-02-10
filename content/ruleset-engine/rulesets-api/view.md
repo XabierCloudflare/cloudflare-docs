@@ -118,6 +118,7 @@ The API returns a `404 Not Found` HTTP status code under these conditions:
 ```bash
 curl "https://api.cloudflare.com/client/v4/zones/<ZONE_ID>/rulesets/<RULESET_ID>" \
 -H "Authorization: Bearer <API_TOKEN>"
+-H "X-Auth-Email: youremail@email.com"
 ```
 
 </div>
