@@ -6,6 +6,7 @@ _build:
 ---
 
 - The CA certificate can be from a publicly trusted CA or self-signed.
+- The certificate has to be a root certificate, a leaf certificate will be not valid. 
 - In the certificate `Basic Constraints`, the attribute `CA` must be set to `TRUE`.
 - The certificate must use one of the signature algorithms listed below:
 
