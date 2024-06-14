@@ -25,6 +25,10 @@ For more information on lists managed by Cloudflare, such as Managed IP Lists, r
 
 Refer to [Create a list in the dashboard](/waf/tools/lists/create-dashboard/) or to the [Lists API](/waf/tools/lists/lists-api/) page.
 
+{{<Aside type="note">}}
+While using Zone Versioning, IP Lists will be linked to each zone version where you use them. This can cause issues when attempti to delete the IP lists, as they will be referenced in multiple version.
+{{</Aside>}}
+
 ## Use a custom list
 
 Use custom lists in rule [expressions](/ruleset-engine/rules-language/expressions/) with the `in` operator and with a field supported by the custom list:
